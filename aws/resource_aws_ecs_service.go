@@ -117,6 +117,7 @@ func resourceAwsEcsService() *schema.Resource {
 				},
 				Set: resourceAwsEcsLoadBalancerHash,
 			},
+
 			"network_configuration": {
 				Type:     schema.TypeList,
 				Optional: true,
@@ -143,6 +144,7 @@ func resourceAwsEcsService() *schema.Resource {
 					},
 				},
 			},
+
 			"placement_strategy": {
 				Type:     schema.TypeSet,
 				Optional: true,
